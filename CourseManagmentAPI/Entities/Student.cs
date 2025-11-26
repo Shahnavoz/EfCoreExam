@@ -11,5 +11,5 @@ public class Student
     public string Email { get; set; }
     public DateTime RegistrationDate { get; set; }=DateTime.Now;
     public long CourseId { get; set; }
-    public Course Course { get; set; }
+    public Course? Course { get; set; }
 }

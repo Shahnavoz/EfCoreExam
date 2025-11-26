@@ -11,7 +11,7 @@ public class CourseService(ApplicationDbContext context):ICourseService
 {
     public async Task<List<Course>> GetCoursesAsync()
     {
-        return await context.Courses.Include(c=>c.Students).ToListAsync();
+        return await context.Courses.Include(c=>c.Students).Include(c=>c.Modules).ToListAsync();
     }
 
     public async Task<Response<Course>> GetCourseAsync(int id)

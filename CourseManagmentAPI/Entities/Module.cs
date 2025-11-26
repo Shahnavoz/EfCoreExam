@@ -6,5 +6,7 @@ public class Module
     public String ThemeName { get; set; }
     public string Description { get; set; }
     public int ModuleNumber { get; set; }
+    public long CourseId { get; set; }
+    public Course? Course { get; set; }
         
 }

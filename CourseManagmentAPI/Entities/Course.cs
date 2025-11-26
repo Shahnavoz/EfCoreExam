@@ -8,9 +8,7 @@ public class Course
     public string Category { get; set; }
     public string DifficultyLevel { get; set; }
     public int Duration { get; set; }
-    public int ModuleId { get; set; }
-    public Module Module { get; set; }
     
-    public ICollection<Student> Students { get; set; }
-    public ICollection<Module> Modules { get; set; }
+    public ICollection<Student>? Students { get; set; }
+    public ICollection<Module>? Modules { get; set; }
 }
